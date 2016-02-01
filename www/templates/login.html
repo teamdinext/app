@@ -1,0 +1,30 @@
+<ion-view view-title="Login">
+  <ion-content class="login content-dark" style="max-width: 100vw;">
+    <div class="dnd-logo logo-large">
+        <img src="img/logo-large.png" alt="">
+    </div>
+    <div class="item description">
+    <h1>Welcome!</h1>
+        <p class="ionic-text-wrap">
+        Please use your Discussions &amp; Dragons username and password to login.
+        </p>
+    </div>
+    <form ng-submit="doLogin()" class="login-form">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" ng-model="loginData.username" placeholder="Username">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="loginData.password" placeholder="Password">
+        </label>
+        <label class="item" style="margin-top: 0px; padding-top: 0px;">
+          <button class="button button-block button-assertive" type="submit">Log in</button>
+        </label>
+        <label class="item">
+          <button class="button button-block button-assertive button-tall" type="submit">I don't have one!</button>
+        </label>
+      </div>
+    </form>
+      
+  </ion-content>
+</ion-view>
